@@ -36,11 +36,12 @@ The project demonstrates how to host a secure, production-ready website on AWS. 
 - **Loveable AI** - Original website creation
 
 ## Deployment Steps
-1.  Purchased a custom domain name from **Names.co.uk** and transferred the domain to **Cloudfare.com** with its dedicated DNS records. 
+1.  Purchased a custom domain name from **Names.co.uk** and transferred the domain to **Cloudfare.com** with its dedicated DNS records.
+
 1.1. Ensured to remove old previous DNS providers NS records to avoid DNS conflicts. 
-2.  Launched EC2 and securely stored Public Key certificate (.pem) in a S3 bucket. 
-3.  Configured network security groups for inbound traffic through 443 (HTTPS) and 80 (HTTP). 
-4. Installed and checked status of Nginx in the instance as follow: 
+3.  Launched EC2 and securely stored Public Key certificate (.pem) in a S3 bucket. 
+4.  Configured network security groups for inbound traffic through 443 (HTTPS) and 80 (HTTP). 
+5. Installed and checked status of Nginx in the instance as follow: 
 ```sh
 sudo apt install nginx -y
 sudo systemctl enable nginx
