@@ -79,11 +79,15 @@ sudo apt install certbot python3-certbot-nginx -y
 ```sh 
 sudo certbot --nginx -d stanagh.com -d www.stanagh.com
 ```
-6. Configured Lambda and EventBridge automate the start & stop time of the EC2 instance. Screenshot are available in the [`deployment/`](deployment/) folder. Steps are as follows: 
+6. Configured Lambda and EventBridge automate the start & stop time of the EC2 instance. Screenshot are available in the [`deployment/`](deployment/) folder. Steps are as follows:
+
 6.1 Created a IAM policy that defined operation to run on the EC2 instance. 
+
 6.2 Assigned the policy to Lambda AWS service. 
+
 6.3 Created Python script to manage the EC2 instances.
-    6.4 Added EventBridge as a trigger, with a defined JSON function to stop the instance based on a CRON daily time schedule.  
+    
+6.4 Added EventBridge as a trigger, with a defined JSON function to stop the instance based on a CRON daily time schedule.  
 
 ## Screenshots
 ![Homepage](screenshots/homepage.png)
