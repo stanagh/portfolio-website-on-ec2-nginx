@@ -110,6 +110,13 @@ curl -vk https://stanagh.com
 ```
 
 
+## Learnings Outcome
+- Understanding EC2 setup and Linux server management.
+- Configuring Nginx for production use.
+- Implementing HTTPS with Let’s Encrypt.
+- Documenting infrastructure for reproducibility.
+
+
 
 
 
