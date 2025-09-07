@@ -3,8 +3,8 @@
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Architecture Diagram](#architecture-diagram)
-- [Deployment Steps](#deployment-steps)
 - [Technologies Used](#technologies-used)
+- [Deployment Steps](#deployment-steps)
 - [Screenshots](##screenshots)
 - [Learnings](#learnings)
 
