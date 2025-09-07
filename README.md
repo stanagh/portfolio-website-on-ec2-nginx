@@ -1,5 +1,7 @@
 # Portfolio Website Deployment on AWS EC2
 
+![alt text]https://www.stanagh.com/
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Architecture Diagram](#architecture-diagram)
