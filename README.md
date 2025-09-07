@@ -93,7 +93,9 @@ sudo certbot --nginx -d stanagh.com -d www.stanagh.com
 6.4 Added EventBridge as a trigger, with a defined JSON function to stop the instance based on a CRON daily time schedule.  
 
 ## Screenshots
-![Homepage](screenshots/homepage.png)
+<img width="2730" height="1725" alt="image" src="https://github.com/user-attachments/assets/95f9a8dc-2cc2-425c-918b-cbfe12f39236" />
+<img width="2734" height="1718" alt="image" src="https://github.com/user-attachments/assets/a2ac1b20-3752-42b4-b034-d616a18b6582" />
+
 
 ## Troubleshooting steps 
 dig - Looks up DNS records to see what IP address a domain points to
