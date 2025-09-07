@@ -27,13 +27,13 @@ The project demonstrates how to host a secure, production-ready website on AWS. 
 - Let’s Encrypt provides HTTPS for secure communication.
 
 ## Technologies used
-- **AWS EC2**, t3.micro – Virtual server hosting
+- **AWS EC2**, t3.micro - Virtual server hosting
 - **Elastic IP** - To assign a static IP to the instance
 - **Cloufare** - DNS domain registar for my custom domain records
-- **Nginx** – Web server and reverse proxy
-- **Let’s Encrypt** – Free SSL certificates
-- **Bash** – Basic automation for setup
-- **Loveable AI** – Original website creation
+- **Nginx** - Web server and reverse proxy
+- **Let’s Encrypt** - Free SSL certificates
+- **Bash** - Basic automation for setup
+- **Loveable AI** - Original website creation
 
 ## Deployment Steps
 1.  Purchased a custom domain name from **Names.co.uk** and transferred the domain to **Cloudfare.com** with its dedicated DNS records. 
@@ -56,11 +56,11 @@ sudo systemctl reload nginx
 ```
 4.2 Added website content under path below: 
 ```sh
-/var/www/stanagh.com
+/var/www/stanagh.com/potfolio-website
 ```
 4.3. Cloned repo into the new created directory and assigned permission
 ```sh 
-sudo git clone https://<username>:<token>@github.com/<username>/<repo>.git        potfolio-website
+sudo git clone https://<username>:<token>@github.com/<username>/<repo>.git potfolio-website
 sudo chown -R ubuntu:ubuntu potfolio-website
 ```
 4.4 Built the project by installing dependencies
