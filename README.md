@@ -21,7 +21,8 @@ The project demonstrates how to host a secure, production-ready website on AWS. 
 - Ensuring website availability and uptime using **Lambda** and **EventBridge**.
 
 ## Architecture Diagram
--- ![architecture diagram](https://github.com/user-attachments/assets/a3d978b9-fc7b-4908-9377-b84799b923fb)
+![v2 architecture diagram](https://github.com/user-attachments/assets/b94026b0-9f99-4aea-99d5-eaf67ea61f4d)
+
 
 **Description** 
 - Visitors access the portfolio website through a custom domain.
@@ -40,7 +41,7 @@ The project demonstrates how to host a secure, production-ready website on AWS. 
 ## Deployment Steps
 1.  Purchased a custom domain name from **Names.co.uk** and transferred the domain to **Cloudfare.com** with its dedicated DNS records.
 
-1.1. Ensured to removal of old previous DNS providers' NS records to avoid DNS conflicts.
+    1.1. Removed the previous DNS providers' NS records to avoid DNS conflicts.
 
 3.  Launched EC2 and securely stored the Public Key certificate (.pem) in an S3 bucket. 
 
