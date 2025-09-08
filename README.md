@@ -86,7 +86,7 @@ sudo apt install certbot python3-certbot-nginx -y
 ```sh 
 sudo certbot --nginx -d stanagh.com -d www.stanagh.com
 ```
-6. Configured Lambda and EventBridge to automate the start & stop time of the EC2 instance. Screenshots are available in the [`deployment/`](deployment/) folder. Steps are as follows:
+6. Configured Lambda and EventBridge to automate the start & stop time of the EC2 instance. Screenshots are available in the [`lambda-setup/`](lambda-setup/) folder. Steps are as follows:
 
 6.1 Created an IAM policy that defined an operation to run on the EC2 instance. 
 
