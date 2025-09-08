@@ -31,7 +31,7 @@ The project demonstrates how to host a secure, production-ready website on AWS. 
 ## Technologies used
 - **AWS EC2**, t3.micro - Virtual server hosting
 - **Elastic IP** - To assign a static IP to the instance
-- **Cloufare** - DNS domain registar for my custom domain records
+- **Cloufare** - DNS domain registrar for my custom domain records
 - **Nginx** - Web server and reverse proxy
 - **Let’s Encrypt** - Free SSL certificates
 - **Bash** - Basic automation for setup
@@ -40,31 +40,31 @@ The project demonstrates how to host a secure, production-ready website on AWS. 
 ## Deployment Steps
 1.  Purchased a custom domain name from **Names.co.uk** and transferred the domain to **Cloudfare.com** with its dedicated DNS records.
 
-1.1. Ensured to remove old previous DNS providers NS records to avoid DNS conflicts.
+1.1. Ensured to removal of old previous DNS providers' NS records to avoid DNS conflicts.
 
-3.  Launched EC2 and securely stored Public Key certificate (.pem) in a S3 bucket. 
+3.  Launched EC2 and securely stored the Public Key certificate (.pem) in an S3 bucket. 
 
 4.  Configured network security groups for inbound traffic through 443 (HTTPS) and 80 (HTTP). 
 
-5. Installed and checked status of Nginx in the instance as follow: 
+5. Installed and checked the status of Nginx in the instance as follows: 
 ```sh
 sudo apt install nginx -y
 sudo systemctl enable nginx
 sudo systemctl start nginx
 sudo systemclt status nginx 
 ```
-4.1 Created a new server blocked , enabled it using hard links and tested connection
+4.1 Created a new server, blocked, enabled it using hard links and tested the connection
 ```sh
 sudo nano /etc/nginx/sites-available/stanagh
 sudo ln -s /etc/nginx/sites-available/stanagh.com /etc/nginx/sites-enabled/ 
 sudo nginx -t
 sudo systemctl reload nginx
 ```
-4.2 Added website content under path below: 
+4.2 Added website content under the path below: 
 ```sh
 /var/www/stanagh.com/potfolio-website
 ```
-4.3. Cloned repo into the new created directory and assigned permission
+4.3. Cloned the repo into the newly created directory and assigned permission
 ```sh 
 sudo git clone https://<username>:<token>@github.com/<username>/<repo>.git potfolio-website
 sudo chown -R ubuntu:ubuntu potfolio-website
@@ -85,13 +85,13 @@ sudo apt install certbot python3-certbot-nginx -y
 ```sh 
 sudo certbot --nginx -d stanagh.com -d www.stanagh.com
 ```
-6. Configured Lambda and EventBridge automate the start & stop time of the EC2 instance. Screenshot are available in the [`deployment/`](deployment/) folder. Steps are as follows:
+6. Configured Lambda and EventBridge to automate the start & stop time of the EC2 instance. Screenshots are available in the [`deployment/`](deployment/) folder. Steps are as follows:
 
-6.1 Created a IAM policy that defined operation to run on the EC2 instance. 
+6.1 Created an IAM policy that defined an operation to run on the EC2 instance. 
 
-6.2 Assigned the policy to Lambda AWS service. 
+6.2 Assigned the policy to the Lambda AWS service. 
 
-6.3 Created Python script to manage the EC2 instances.
+6.3 Created a Python script to manage the EC2 instances.
     
 6.4 Added EventBridge as a trigger, with a defined JSON function to stop the instance based on a CRON daily time schedule.  
 
@@ -117,7 +117,7 @@ curl -vk https://stanagh.com
 ```
 
 
-## Learnings Outcome
+## Learning Outcome
 - Understanding EC2 setup and Linux server management.
 - Configuring Nginx for production use.
 - Implementing HTTPS with Let’s Encrypt.
