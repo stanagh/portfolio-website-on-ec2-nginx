@@ -21,7 +21,7 @@ The project demonstrates how to host a secure, production-ready website on AWS. 
 - Ensuring website availability and uptime using **Lambda** and **EventBridge**.
 
 ## Architecture Diagram
--- add here 
+-- ![architecture diagram](https://github.com/user-attachments/assets/a3d978b9-fc7b-4908-9377-b84799b923fb)
 
 **Description** 
 - Visitors access the portfolio website through a custom domain.
